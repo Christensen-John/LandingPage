@@ -174,3 +174,17 @@ blockquote,
 .body-section-blockquote {
   background-color: #e5e7eb;
 }
+
+blockquote > p {
+  margin: 0px;
+}
+
+.blockquote > footer {
+  background-color: inherit;
+  color: inherit;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+}
