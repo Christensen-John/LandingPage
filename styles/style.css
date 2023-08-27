@@ -42,6 +42,7 @@ header {
 footer {
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 header,
@@ -73,6 +74,7 @@ blockquote,
 .body-section-even {
   padding-left: 15%;
   padding-right: 15%;
+  margin-bottom: 30px;
 }
 
 /* || Header and Main Navigation */
@@ -95,6 +97,7 @@ blockquote,
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
+  gap: 20px;
 }
 
 #hero-main {
@@ -124,6 +127,7 @@ blockquote,
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 /* || Cards */
 .card-container {
@@ -173,6 +177,8 @@ blockquote,
 /* || Blockquote section */
 .body-section-blockquote {
   background-color: #e5e7eb;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 blockquote > p {
@@ -187,4 +193,41 @@ blockquote > p {
   text-align: right;
   margin: 0px;
   padding: 0px;
+}
+
+.blockquote > p > em {
+  font-weight: 900;
+  /* font-style: normal; */
+  text-shadow: #1f2937;
+  color: #3882f6;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #3882f6;
+  border-radius: 10px;
+  width: 100%;
+  padding: 25px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  color: #f9faf8;
+}
+
+.call-to-action-content h2,
+.call-to-action-content p {
+  margin: 0px;
+}
+
+.call-to-action-content p {
+  font-size: 14px;
+}
+
+.call-to-action button {
+  border: 1px solid #f9faf8;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 125px;
+  min-width: 125px;
 }
