@@ -10,11 +10,6 @@ body {
   margin: 0px;
 }
 
-body > * {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 h1 {
   color: #1f2937;
   font-weight: 900;
@@ -59,12 +54,27 @@ img {
 }
 
 blockquote {
-  background-color: #e5e7eb;
   color: #1f2937;
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* || Main padding */
+.navbar,
+.hero,
+.card-container,
+blockquote,
+.body-section-even {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 /* || Header and Main Navigation */
 /* Main navigation */
 .navbar {
@@ -82,9 +92,9 @@ blockquote {
 /* || Hero */
 .hero {
   display: flex;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
 }
 
 #hero-main {
@@ -103,13 +113,25 @@ blockquote {
 .hero img {
   width: 950px;
   height: 250px;
+  max-width: 1000px;
+  max-height: auto;
 }
 
+/* || Odd and even body sections */
+.body-section-even,
+.body-section-block-quote {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* || Cards */
 .card-container {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
+  padding: 0px;
 }
 
 .card-section {
@@ -118,18 +140,37 @@ blockquote {
   flex-wrap: wrap;
   align-items: space-evenly;
   justify-content: space-evenly;
+  gap: 40px;
 }
 
 .card {
-  width: 200px;
+  width: 150px;
   height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card > img {
   width: 150px;
   height: 150px;
+  min-height: 150px;
+  min-width: 150px;
   border: 3px solid #3882f6;
   border-radius: 10px;
 }
 
+.card p {
+  margin: 0px;
+}
+
+.card-container > h1 {
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+
 /* || Blockquote section */
+.body-section-blockquote {
+  background-color: #e5e7eb;
+}
